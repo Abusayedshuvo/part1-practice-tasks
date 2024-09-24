@@ -30,6 +30,20 @@ function findTwo(numbers) {
   }
   return count;
 }
-
 const numbers2 = [5, 6, 11, 12, 98, 5];
-console.log(findTwo(numbers2));
+// console.log(findTwo(numbers2));
+
+// Task 3
+function vowelsVowels(str) {
+  const strArr = str.split("");
+  let count = 0;
+  for (let i of strArr) {
+    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+      count++;
+    }
+  }
+  return count;
+}
+const vowels =
+  "You are given an array of numbers. Count how many times the a number is repeated in the array.";
+console.log(vowelsVowels(vowels));
