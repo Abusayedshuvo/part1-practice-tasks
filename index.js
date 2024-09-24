@@ -46,4 +46,25 @@ function vowelsVowels(str) {
 }
 const vowels =
   "You are given an array of numbers. Count how many times the a number is repeated in the array.";
-console.log(vowelsVowels(vowels));
+// console.log(vowelsVowels(vowels));
+
+// Task 4
+
+function longestWord(str) {
+  const words = str.split(" ");
+  let longWord = "";
+  for (word of words) {
+    if (word.length > longWord.length) {
+      longWord = word;
+    }
+  }
+  return longWord;
+}
+
+const string3 = "I am learning Programming to become a programmer";
+// console.log(longestWord(string3));
+
+// Task 5
+
+const random = Math.floor(Math.random() * 11) + 10;
+console.log(random);
